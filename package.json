@@ -1,0 +1,13 @@
+{
+    	"name": "udp-sockets",
+  	"version": "0.0.1",
+    	"preferGlobal": "true",
+	"scripts": {
+        "start" : "node server"
+   	},
+  	"dependencies": {
+  	"express": "3.5.0",
+	"jade": "*",
+	"socket.io": "*"
+  	}
+}
