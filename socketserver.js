@@ -17,9 +17,9 @@ module.exports = {
               datagramserver.close();
             });
 
-            datagramserver.on('message', function (msg, rinfo) {
-              console.log('server got: ' + msg + ' from ' + rinfo.address + ':' + rinfo.port);
-              var message = msg.toString();
+            datagramserver.on('message', function (data, address) {
+              console.log('server got: ' + data + ' from ' + address.address + ':' + address.port);
+              var message = data.toString();
               io.sockets.emit('message', message);
             });
 

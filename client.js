@@ -12,6 +12,6 @@ var datagram = require('dgram');
 var client = datagram.createSocket("udp4");
 var message = new Buffer(quotes[Math.floor(Math.random()*quotes.length)].line);
 
-client.send(message, 0, message.length, 54321, "localhost", function(err, bytes) {
+client.send(message, 0, message.length, 54321, "localhost", function(error) {
   client.close();
 });

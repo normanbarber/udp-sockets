@@ -1,6 +1,6 @@
 var http = require('http'),
     express = require('express'),
-    socket = require('socketserver.js'),
+    socket = require('./socketserver.js'),
     routes = require('./routes'),
     path = require('path');
 
